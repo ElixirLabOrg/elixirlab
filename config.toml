@@ -1,0 +1,268 @@
+# For a description of these parameters, please visit the theme wiki.
+# https://github.com/pacollins/hugo-future-imperfect-slim/wiki/config.toml
+baseurl                 = "https://elixirlab.org"
+DefaultContentLanguage  = "en"
+title                   = "Elixir Lab"
+theme                   = "hugo-future-imperfect-slim"
+paginate                = 3
+disqusShortname         = ""
+googleAnalytics         = ""
+pluralizeListTitles     = false
+disableLanguages        = []
+
+[markup.goldmark.renderer]
+  unsafe                = true
+
+[module]
+  [module.hugoVersion]
+  extended              = true
+  min                   = "0.62.0"
+
+[outputs]
+  home                  = ["html", "json"]
+
+[params]
+  enableCDN             = false
+  cssFiles              = ["default"]
+  jsFiles               = ["default"]
+  highlightjs           = true
+  highlightjsTheme      = ""
+  highlightjsLang       = []
+  viewMorePostsLink     = "blog"
+  readingTime           = true
+  imageStretch          = ""
+  removeBlur            = false
+  socialShare           = ["twitter", "linkedin", "youtube"]
+  hideEmptyStats        = false
+
+  [params.meta]
+    description         = "Uma iniciativa brasileira para geração de conteúdo em português (pt-BR) sobre a linguagem de programação Elixir"
+    author              = "Elixir Lab"
+    favicon             = false
+    svg                 = true
+    faviconVersion      = "1"
+    msColor             = "#ffffff"
+    iOSColor            = "#ffffff"
+
+  [params.header]
+    navbarTitle         = "Elixir Lab"
+    dynamicTitles       = true
+    searchMenu          = true
+    shareMenu           = true
+    languageMenu        = true
+
+  [params.intro]
+    header                = "Elixir Lab"
+    paragraph             = "<a href='https://youtube.com/ElixirLabOrg'>Elixir Lab no Youtube</a>"
+    rssIntro              = false
+    socialIntro           = true
+    hideWhenSingleColumn  = false
+    alwaysOnHomepage      = false
+
+    [params.intro.pic]
+      src                 = "img/main/elixir-lab-logo.jpg"
+      shape               = "circle"
+      width               = ""
+      alt                 = "Elixir Lab logo"
+
+  [params.sidebar]
+    about               = "Iniciativa brasileira para difundir a linguagem de programação Elixir"
+    postAmount          = 5
+    categories          = true
+    categoriesByCount   = true
+
+  [params.footer]
+    rssFooter           = true
+    socialFooter        = true
+
+  [params.utterances]
+    enabled             = false
+    repo                = ""
+    issueTerm           = "pathname"
+    issueNumber         = ""
+    label               = ""
+    theme               = "github-light"
+
+  [params.staticman]
+    enabled             = true
+    api                 = ""  # No Trailing Slash
+    gitProvider         = ""
+    username            = ""
+    repo                = ""
+    branch              = ""
+
+    [params.staticman.recaptcha]
+      siteKey           = ""
+      encryptedKey      = ""
+
+[menu]
+
+  [[menu.main]]
+    name              = "Início"
+    identifier        = "home"
+    url               = ""
+    pre               = "<i class='fa fa-home'></i>"
+    weight            = 1
+
+  [[menu.main]]
+    name              = "Sobre"
+    identifier        = "about"
+    url               = "sobre"
+    pre               = "<i class='far fa-id-card'></i>"
+    weight            = 2
+
+  [[menu.main]]
+    name              = "Blog"
+    identifier        = "blog"
+    url               = "blog"
+    pre               = "<i class='far fa-newspaper'></i>"
+    weight            = 3
+
+  [[menu.main]]
+    name              = "Categorias"
+    identifier        = "categorias"
+    url               = "categorias"
+    pre               = "<i class='fas fa-sitemap'></i>"
+    weight            = 5
+
+  [[menu.main]]
+    name              = "Contato"
+    identifier        = "contact"
+    url               = "contato"
+    pre               = "<i class='far fa-envelope'></i>"
+    weight            = 6
+
+[Languages]
+
+  [Languages.en]
+    LanguageCode        = "en"
+    LanguageName        = "English"
+    weight              = 1
+
+    [[Languages.en.menu.main]]
+      name              = "Home"
+      identifier        = "home"
+      url               = ""
+      pre               = "<i class='fas fa-home'></i>"
+      weight            = 1
+
+    [[Languages.en.menu.main]]
+      name              = "About"
+      identifier        = "about"
+      url               = "about"
+      pre               = "<i class='far fa-id-card'></i>"
+      weight            = 2
+
+    [[Languages.en.menu.main]]
+      name              = "Blog"
+      identifier        = "blog"
+      url               = "blog"
+      pre               = "<i class='far fa-newspaper'></i>"
+      weight            = 3
+
+    [[Languages.en.menu.main]]
+      name              = "Categories"
+      identifier        = "categories"
+      url               = "categories"
+      pre               = "<i class='fas fa-sitemap'></i>"
+      weight            = 5
+
+    [[Languages.en.menu.main]]
+      name              = "Contact"
+      identifier        = "contact"
+      url               = "contact"
+      pre               = "<i class='far fa-envelope'></i>"
+      weight            = 6
+
+
+  [Languages.pt-BR]
+    LanguageCode        = "pt-BR"
+    LanguageName        = "Português"
+    title               = ""
+    description         = ""
+    weight              = 5
+
+    [[Languages.pt-BR.menu.main]]
+      name              = "Início"
+      identifier        = "home"
+      url               = ""
+      pre               = "<i class='fas fa-home'></i>"
+      weight            = 1
+
+    [[Languages.pt-BR.menu.main]]
+      name              = "Sobre"
+      identifier        = "about"
+      url               = "sobre"
+      pre               = "<i class='far fa-id-card'></i>"
+      weight            = 2
+
+    [[Languages.pt-BR.menu.main]]
+      name              = "Blog"
+      identifier        = "blog"
+      url               = "blog"
+      pre               = "<i class='far fa-newspaper'></i>"
+      weight            = 3
+
+    [[Languages.pt-BR.menu.main]]
+      name              = "Categorias"
+      identifier        = "categories"
+      url               = "categorias"
+      pre               = "<i class='fas fa-sitemap'></i>"
+      weight            = 5
+
+    [[Languages.pt-BR.menu.main]]
+      name              = "Contato"
+      identifier        = "contact"
+      url               = "contato"
+      pre               = "<i class='far fa-envelope'></i>"
+      weight            = 6
+
+[social]
+  # Coding Communities
+  github                = ""
+  gitlab                = ""
+  stackoverflow         = "" # User Number
+  bitbucket             = ""
+  jsfiddle              = ""
+  codepen               = ""
+  # Visual Art Communities
+  deviantart            = ""
+  flickr                = ""
+  behance               = ""
+  dribbble              = ""
+  # Publishing Communities
+  wordpress             = ""
+  medium                = ""
+  # Professional/Business Oriented Communities
+  linkedin              = ""
+  linkedin_company      = "elixir-lab-org"
+  foursquare            = ""
+  xing                  = ""
+  slideshare            = ""
+  # Social Networks
+  facebook              = ""
+  googleplus            = ""
+  reddit                = ""
+  quora                 = ""
+  youtube               = "ElixirLabOrg"
+  vimeo                 = ""
+  whatsapp              = "" # WhatsApp Number
+    # WeChat and QQ need testing.
+    wechat              = ""
+    qq                  = "" # User ID Number
+  instagram             = ""
+  tumblr                = ""
+  twitter               = "elixirlaborg"
+  strava                = ""
+  skype                 = ""
+  snapchat              = ""
+  pinterest             = ""
+  telegram              = ""
+  vine                  = ""
+  googlescholar         = ""
+  orcid                 = ""
+  researchgate          = ""
+  keybase               = ""
+  mastodon              = ""
+  # Email
+  email                 = ""
