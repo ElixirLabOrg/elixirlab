@@ -1,7 +1,7 @@
 # For a description of these parameters, please visit the theme wiki.
 # https://github.com/pacollins/hugo-future-imperfect-slim/wiki/config.toml
 baseurl                 = "https://elixirlab.org"
-DefaultContentLanguage  = "en"
+defaultContentLanguage = "pt-br"
 title                   = "Elixir Lab"
 theme                   = "hugo-future-imperfect-slim"
 paginate                = 3
@@ -9,6 +9,7 @@ disqusShortname         = ""
 googleAnalytics         = ""
 pluralizeListTitles     = false
 disableLanguages        = []
+defaultContentLanguageInSubdir = false
 
 [markup.goldmark.renderer]
   unsafe                = true
@@ -138,6 +139,7 @@ disableLanguages        = []
     LanguageCode        = "en"
     LanguageName        = "English"
     weight              = 1
+    contentDir          = "content/en"
 
     [[Languages.en.menu.main]]
       name              = "Home"
@@ -178,6 +180,7 @@ disableLanguages        = []
   [Languages.pt-BR]
     LanguageCode        = "pt-BR"
     LanguageName        = "Português"
+    contentDir          = "content/pt-BR"
     title               = ""
     description         = ""
     weight              = 5
