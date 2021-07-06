@@ -2,7 +2,7 @@
 title = "Markdown Syntax Guide BLAH2"
 description = "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
 author = "Hugo Authors"
-date = "2019-03-11"
+date = "2021-03-11"
 tags = ["markdown", "css", "html", "themes"]
 categories = ["themes", "syntax"]
 [[images]]

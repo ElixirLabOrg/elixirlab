@@ -54,7 +54,7 @@ defaultContentLanguageInSubdir = false
 
   [params.intro]
     header                = "Elixir Lab"
-    paragraph             = "<a href='https://youtube.com/ElixirLabOrg'>Elixir Lab no Youtube</a>"
+    paragraph             = "<a href='https://youtube.com/ElixirLabOrg'>Elixir Lab @ Youtube</a>"
     rssIntro              = false
     socialIntro           = true
     hideWhenSingleColumn  = false
@@ -120,10 +120,10 @@ defaultContentLanguageInSubdir = false
     weight            = 3
 
   [[menu.main]]
-    name              = "Categorias"
-    identifier        = "categorias"
-    url               = "categorias"
-    pre               = "<i class='fas fa-sitemap'></i>"
+    name              = "Tags"
+    identifier        = "tags"
+    url               = "tags"
+    pre               = "<i class='fas fa-hashtag'></i>"
     weight            = 5
 
   [[menu.main]]
@@ -163,10 +163,10 @@ defaultContentLanguageInSubdir = false
       weight            = 3
 
     [[Languages.en.menu.main]]
-      name              = "Categories"
-      identifier        = "categories"
-      url               = "categories"
-      pre               = "<i class='fas fa-sitemap'></i>"
+      name              = "Tags"
+      identifier        = "tags"
+      url               = "tags"
+      pre               = "<i class='fas fa-hashtag'></i>"
       weight            = 5
 
     [[Languages.en.menu.main]]
@@ -207,10 +207,10 @@ defaultContentLanguageInSubdir = false
       weight            = 3
 
     [[Languages.pt-BR.menu.main]]
-      name              = "Categorias"
-      identifier        = "categories"
-      url               = "categorias"
-      pre               = "<i class='fas fa-sitemap'></i>"
+      name              = "Tags"
+      identifier        = "tags"
+      url               = "tags"
+      pre               = "<i class='fas fa-hashtag'></i>"
       weight            = 5
 
     [[Languages.pt-BR.menu.main]]
