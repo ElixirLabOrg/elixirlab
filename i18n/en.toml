@@ -10,7 +10,7 @@
 [learn_more]
   other = "Learn More"
 [attribution]
-  other = "Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='{{ .Site.Hugo.Version }}' target='_blank' rel='noopener'>Hugo</a>"
+  other = "Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a>"
 
 # Sections
 [about]
@@ -18,8 +18,8 @@
 [contact]
   other = "Contact"
 [contact_replies]
-  one = "Replies typically within 1 hour."
-  other = "Replies typically within {{ .Count }} hours."
+  one = "Replies typically within 1 day."
+  other = "Replies typically within {{ .Count }} days."
 [blog]
   other = "Blog"
 [categories]

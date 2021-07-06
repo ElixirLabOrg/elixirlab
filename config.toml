@@ -1,7 +1,8 @@
 # For a description of these parameters, please visit the theme wiki.
 # https://github.com/pacollins/hugo-future-imperfect-slim/wiki/config.toml
 baseurl                 = "https://elixirlab.org"
-defaultContentLanguage = "pt-br"
+defaultContentLanguage  = "pt-br"
+languageCode            = "pt-br"
 title                   = "Elixir Lab"
 theme                   = "hugo-future-imperfect-slim"
 paginate                = 3
@@ -33,7 +34,7 @@ defaultContentLanguageInSubdir = false
   readingTime           = true
   imageStretch          = ""
   removeBlur            = false
-  socialShare           = ["twitter", "linkedin", "youtube"]
+  socialShare           = ["twitter"]
   hideEmptyStats        = false
 
   [params.meta]
@@ -48,8 +49,8 @@ defaultContentLanguageInSubdir = false
   [params.header]
     navbarTitle         = "Elixir Lab"
     dynamicTitles       = true
-    searchMenu          = true
-    shareMenu           = true
+    searchMenu          = false
+    shareMenu           = false
     languageMenu        = true
 
   [params.intro]
@@ -64,28 +65,28 @@ defaultContentLanguageInSubdir = false
       src                 = "img/main/elixir-lab-logo.jpg"
       shape               = "circle"
       width               = ""
-      alt                 = "Elixir Lab logo"
+      alt                 = "Elixir Lab logo - Desenho simplificado de um telescópio púrpura, escrito Elixir Lab"
 
   [params.sidebar]
-    about               = "Iniciativa brasileira para difundir a linguagem de programação Elixir"
+    about               = "Iniciativa brasileira para difundir a linguagem de programação Elixir em Português"
     postAmount          = 5
-    categories          = true
-    categoriesByCount   = true
+    categories          = false
+    categoriesByCount   = false
 
   [params.footer]
-    rssFooter           = true
+    rssFooter           = false
     socialFooter        = true
 
   [params.utterances]
     enabled             = false
     repo                = ""
-    issueTerm           = "pathname"
+    issueTerm           = ""
     issueNumber         = ""
     label               = ""
     theme               = "github-light"
 
   [params.staticman]
-    enabled             = true
+    enabled             = false
     api                 = ""  # No Trailing Slash
     gitProvider         = ""
     username            = ""
@@ -126,13 +127,6 @@ defaultContentLanguageInSubdir = false
     pre               = "<i class='fas fa-hashtag'></i>"
     weight            = 5
 
-  [[menu.main]]
-    name              = "Contato"
-    identifier        = "contact"
-    url               = "contato"
-    pre               = "<i class='far fa-envelope'></i>"
-    weight            = 6
-
 [Languages]
 
   [Languages.en]
@@ -168,14 +162,6 @@ defaultContentLanguageInSubdir = false
       url               = "tags"
       pre               = "<i class='fas fa-hashtag'></i>"
       weight            = 5
-
-    [[Languages.en.menu.main]]
-      name              = "Contact"
-      identifier        = "contact"
-      url               = "contact"
-      pre               = "<i class='far fa-envelope'></i>"
-      weight            = 6
-
 
   [Languages.pt-BR]
     LanguageCode        = "pt-BR"
@@ -213,13 +199,6 @@ defaultContentLanguageInSubdir = false
       pre               = "<i class='fas fa-hashtag'></i>"
       weight            = 5
 
-    [[Languages.pt-BR.menu.main]]
-      name              = "Contato"
-      identifier        = "contact"
-      url               = "contato"
-      pre               = "<i class='far fa-envelope'></i>"
-      weight            = 6
-
 [social]
   # Coding Communities
   github                = ""
@@ -250,9 +229,9 @@ defaultContentLanguageInSubdir = false
   youtube               = "ElixirLabOrg"
   vimeo                 = ""
   whatsapp              = "" # WhatsApp Number
-    # WeChat and QQ need testing.
-    wechat              = ""
-    qq                  = "" # User ID Number
+  # WeChat and QQ need testing.
+  wechat              = ""
+  qq                  = "" # User ID Number
   instagram             = ""
   tumblr                = ""
   twitter               = "elixirlaborg"
