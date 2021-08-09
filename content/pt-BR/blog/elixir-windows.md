@@ -6,9 +6,9 @@ date = "2021-08-08"
 tags = ["elixir", "tutorial"]
 categories = ["elixir", "tutorial", "windows"]
 [[images]]
-  src = "img/main/default.jpg"
+  src = "img/elixir-windows/cover.jpg"
   alt = "Nuvens em tons de azul, rosa e roxo"
-  stretch = "horizontal"
+  stretch = "cover"
 +++
 
 ## 1. Instalação do WSL
@@ -146,10 +146,16 @@ Para checar se deu certo, podemos usar o `asdf list nodejs` ou com `node -v`
 Quando instalamos as últimas versões de elixir e erlang, geralmente elas são compativeis entre si, mas na hora que precisamos instalar uma versão mais antiga, precisamos prestar atenção se a versão do elixir é compatível com a versão do erlang que nós instalamos. Como eu faço isso?
 Quando digitamos o comando `asdf list elixir all` vai aparecer uma lista com as diversas versões disponíveis para instalação.
 
-![A imagem é uma captura da tela do terminal mostrando algumas versões de elixir](img/elixir-windows/08.png)
+![A imagem é uma captura da tela do terminal mostrando algumas versões de elixir](/img/elixir-windows/09.png)
 
 Se você prestar atenção, existem várias versões iguais, porém com um `otp-algo` no final. Se prestarmos atenção na versão 1.12.2 do print acima, por exemplo, vemos que ela existe como `1.12.2, 1.12.2-otp-22, 1.12.2-otp-23 e 1.12.2-otp-24`. Como eu sei qual escolher?
 
 O número que vem depois do “otp” é a versão do erlang que aquela versão do elixir suporta.
 
 Então se você está usando uma versão 22.x.x do erlang, você deve optar pela `1.12.2-otp-22`, por exemplo.
+
+Parabéns, agora você já tem o elixir instalado no seu computador
+
+![gif animado que mostra um cachorro golden retriver, com um jaleco e oculos de scientista. No lugar das patas do cachorro você consegue ver uma mão humana, e uma delas balança um Erlenmeyer com um liquido verde](/img/elixir-windows/10.gif)
+
+*Imagem da capa por [Tadas Sar](https://unsplash.com/@stadsa)*
