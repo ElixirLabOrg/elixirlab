@@ -60,7 +60,7 @@ Dando tudo certo, deve aparecer no terminal algo como “seuUsuario@seuComputado
 
 O asdf é um gerenciador de versões de linguagens de programação. Com ele conseguimos instalar o suporte a diversas linguagem no nosso computador, bem como diferentes versões delas, e gerenciar essas versões.
 
-O ideal é seguir o tutorial com o site do próprio asdf aberto - https://asdf-vm.com/#/
+O ideal é seguir o tutorial com o site do próprio asdf aberto - [https://asdf-vm.com/#/](https://asdf-vm.com/#/)
 
 Pode reparar que no site não tem tutorial para windows, mas como nós usamos WSL, seguiremos o tutorial para linux.
 
@@ -90,7 +90,7 @@ Para saber se funcionou, digitamos “asdf”. Uma tela similar a essa deve apar
 
 ## 3. Instalando o erlang
 
-1. Antes de instalar o plugin do erlang, precisamos instalar as dependências. Conseguimos a lista dessas dependências no repositório do plugin do erlang para asdf -https://github.com/asdf-vm/asdf-erlang#before-asdf-install
+1. Antes de instalar o plugin do erlang, precisamos instalar as dependências. Conseguimos a lista dessas dependências no repositório do plugin do erlang para asdf -[https://github.com/asdf-vm/asdf-erlang#before-asdf-install](https://github.com/asdf-vm/asdf-erlang#before-asdf-install)
 
 2. Nessa lista devemos procurar nosso sistema operacional e versão. No exemplo estamos usando o ubuntu 20.04, então encontramos essa lista de dependências.
 
