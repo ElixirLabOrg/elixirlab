@@ -60,7 +60,7 @@ Dando tudo certo, deve aparecer no terminal algo como “seuUsuario@seuComputado
 
 O asdf é um gerenciador de versões de linguagens de programação. Com ele, conseguimos instalar o suporte a diversas linguagem no nosso computador, bem como gerenciar diferentes versões delas.
 
-O ideal é seguir o tutorial com o site do próprio asdf aberto - [https://asdf-vm.com/#/](https://asdf-vm.com/#/)
+O ideal é seguir o tutorial com [o site do próprio asdf](https://asdf-vm.com/#/) aberto ou, se preferir, pode usar [o site traduzido](https://translate.google.com/translate?sl=en&tl=pt&u=https://asdf-vm.com/%23/). Importante apontar que uma expressão ou outra poderá ser traduzida erroneamente.
 
 Pode reparar que no site não tem tutorial para windows, mas como nós usamos WSL, seguiremos o tutorial para linux.
 
