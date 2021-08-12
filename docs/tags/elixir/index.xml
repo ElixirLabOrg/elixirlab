@@ -6,11 +6,7 @@
     <description>Recent content in elixir on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Sun, 08 Aug 2021 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://elixirlab.org/tags/elixir/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 08 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://elixirlab.org/tags/elixir/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Como instalar elixir no windows</title>
       <link>https://elixirlab.org/blog/elixir-windows/</link>

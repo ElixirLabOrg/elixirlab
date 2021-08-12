@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://elixirlab.org/en/about/</loc>
     <lastmod>2021-07-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://elixirlab.org/en/blog/</loc>
     <lastmod>2021-07-05T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -20,9 +17,7 @@
                 hreflang="en"
                 href="https://elixirlab.org/en/blog/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://elixirlab.org/en/categories/</loc>
     <lastmod>2021-07-05T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -35,9 +30,7 @@
                 hreflang="en"
                 href="https://elixirlab.org/en/categories/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://elixirlab.org/en/tags/elixir/</loc>
     <lastmod>2021-07-05T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -50,9 +43,7 @@
                 hreflang="en"
                 href="https://elixirlab.org/en/tags/elixir/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://elixirlab.org/en/categories/elixir/</loc>
     <lastmod>2021-07-05T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -65,9 +56,7 @@
                 hreflang="en"
                 href="https://elixirlab.org/en/categories/elixir/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://elixirlab.org/en/</loc>
     <lastmod>2021-07-05T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -80,14 +69,10 @@
                 hreflang="en"
                 href="https://elixirlab.org/en/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://elixirlab.org/en/blog/hello-elixir/</loc>
     <lastmod>2021-07-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://elixirlab.org/en/tags/</loc>
     <lastmod>2021-07-05T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -100,11 +85,8 @@
                 hreflang="en"
                 href="https://elixirlab.org/en/tags/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://elixirlab.org/en/categories/welcome/</loc>
     <lastmod>2021-07-05T00:00:00+00:00</lastmod>
   </url>
-  
 </urlset>

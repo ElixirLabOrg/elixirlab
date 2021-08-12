@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+  <meta charset="utf-8">
+<title>Como instalar elixir no windows - </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="generator" content="Hugo 0.87.0" />
+  <meta property="og:title" content="Como instalar elixir no windows">
+  <meta property="og:description" content="Nesse tutorial ensinaremos como instalar elixir no windows usando wsl e asdf!">
+  <meta property="description" content="Nesse tutorial ensinaremos como instalar elixir no windows usando wsl e asdf!">
+  <meta property="og:url" content="https://elixirlab.org/blog/elixir-windows/">
+  <meta property="og:type" content="article">
+  
+    
+      <meta property="og:image" content="https://elixirlab.org/img/elixir-windows/cover.jpg">
+      <meta property="og:image:alt" content="Nuvens em tons de azul, rosa e roxo">
+    
+  
+  <link rel="stylesheet" href="/css/bundle.min.9c2a75c4f520b5d59d87d4cf39ed10a4b84ec7d76e271aef0f42dde031110cd4.css" integrity="sha256-nCp1xPUgtdWdh9TPOe0QpLhOx9duJxrvD0Ld4DERDNQ="><link rel="stylesheet" href="/css/add-on.css">
+</head>
+
+  <body>
+    
+
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/" class="nav">
+        
+          Blog
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu menu">
+      
+        
+          
+          <a href="/" class="nav link"><i class='fas fa-home'></i> Início</a>
+        
+      
+        
+          
+          <a href="/sobre" class="nav link"><i class='far fa-id-card'></i> Sobre</a>
+        
+      
+        
+          
+          <a href="/blog" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+        
+      
+        
+          
+          <a href="/tags" class="nav link"><i class='fas fa-hashtag'></i> Tags</a>
+        
+      
+      
+      
+    </menu>
+    
+    
+    <a href="#lang-menu" class="nav lang-toggle" lang="pt-br">pt-br</a>
+    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  
+  <menu id="lang-menu" class="flyout-menu menu">
+  <a href="#" lang="pt-br" class="nav link active">Português (pt-br)</a>
+  
+    
+      
+        <a href="/en" lang="en" class="nav no-lang link">English (en)</a>
+      
+    
+      
+    
+  
+</menu>
+
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro" >
+  <a href="/"><img src="https://elixirlab.org/img/main/elixir-lab-logo.jpg" class="circle" width="100" alt="Elixir Lab logo - Desenho simplificado de um telescópio púrpura, escrito Elixir Lab" /></a>
+  <header>
+    <h1>Elixir Lab</h1>
+  </header>
+  <main>
+    <p><a href='https://youtube.com/ElixirLabOrg'>Elixir Lab @ Youtube</a></p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/company/elixir-lab-org" target="_blank" rel="noopener" title="LinkedIn Company" class="fab fa-linkedin"></a></li>
+
+
+
+
+
+
+<li><a href="//youtube.com/ElixirLabOrg" target="_blank" rel="noopener" title="YouTube" class="fab fa-youtube"></a></li>
+
+
+
+
+
+
+
+<li><a href="//twitter.com/elixirlaborg" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main">
+        
+  <article>
+    <div class="post">
+      <header>
+  <div class="title">
+    
+      <h2><a href="/blog/elixir-windows/">Como instalar elixir no windows</a></h2>
+    
+    
+      <p>Nesse tutorial ensinaremos como instalar elixir no windows usando wsl e asdf!</p>
+    
+  </div>
+  <div class="meta">
+    <time datetime="2021-08-08 00:00:00 &#43;0000 UTC">08-08-2021</time>
+    <p>Rachel Curioso</p>
+    <p>7 Minutos De Leitura</p>
+  </div>
+</header>
+
+      <div id="socnet-share">
+        
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=Como%20instalar%20elixir%20no%20windows&amp;url=https%3a%2f%2felixirlab.org%2fblog%2felixir-windows%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <p>Twitter</p>
+      </a>
+  
+
+
+      </div>
+      <div class="content">
+        <a href="/blog/elixir-windows/" class="image" style="--bg-image: url('https://elixirlab.org/img/elixir-windows/cover.jpg');">
+    <img class="cover" src="https://elixirlab.org/img/elixir-windows/cover.jpg" alt="Nuvens em tons de azul, rosa e roxo">
+  </a>
+        <h2 id="1-instalação-do-wsl">1. Instalação do WSL</h2>
+<p>O primeiro passo é instalar o WSL (windows system for Linux) na sua máquina.</p>
+<ol>
+<li>Se o seu windows está em português, vai em Windows &gt; recursos do windows. Caso seu windows esteja em inglês, procure por “Windows Features” ao invés de “Recursos do windows”.</li>
+</ol>
+<p><img src="/img/elixir-windows/01.png" alt="um print screen do menu inicial do windows com evidenciando o aplicativo &lsquo;ativar ou desativar recursos do Windows&rsquo;"></p>
+<ol start="2">
+<li>Marcar a opção “Subsistema do Windows para Linux”. Caso seu windows esteja em inglês, a opção se chama “Windows Subsystem for Linux”</li>
+</ol>
+<p><img src="/img/elixir-windows/02.png" alt="Uma imagem da janela de recursos do windows evidenciando a opção &lsquo;subsistema do windows para linux&rsquo;, que é a sexta opção de baixo pra cima"></p>
+<ol start="3">
+<li>
+<p>Abrir a Microsoft Store.</p>
+</li>
+<li>
+<p>Procurar a sua distro (distribuição Linux) de preferência. Algumas das distros disponíveis são:</p>
+</li>
+</ol>
+<ul>
+<li>Ubuntu</li>
+<li>OpenSuse</li>
+<li>Kali Linux</li>
+<li>Debian</li>
+<li>Alpine WSL</li>
+</ul>
+<ol start="5">
+<li>Instale a Distro da sua preferência. Para esse tutorial, usarei a versão mais recente do Ubuntu, que nesse momento é a 20.04.</li>
+</ol>
+<p><img src="/img/elixir-windows/03.png" alt="a imagem mostra a janela da microsoft store, com o app &lsquo;ubuntu 20.04 lts&rsquo; a amostra. A imagem também evidencia o botão de instalar, no canto superior direito da janela"></p>
+<p>Dando certo, o botão da direita vai virar “iniciar” e você poderá usar o ubuntu no seu windows
+Se você procurar no menu do windows pelo nome da distro que você instalou, já deverá estar disponível pra você.</p>
+<ol start="6">
+<li>Abra a distro que você instalou.</li>
+</ol>
+<p>Na primeira vez que você acessa o seu subsistema linux, aparece uma notificação que ele está instalando e, um pouco depois, ele pede para você cadastrar sua conta no linux, com o nome do seu usuário e senha.
+Esses dados não necessariamente são iguais aos do windows. Você pode colocar o que quiser.</p>
+<p><img src="/img/elixir-windows/04.png" alt="imagem do terminal do ubuntu no windows depois de instalar o ubuntu, pedindo usuário e senha para primeira configuração"></p>
+<p>Dando tudo certo, deve aparecer no terminal algo como “seuUsuario@seuComputador:”</p>
+<p><img src="/img/elixir-windows/05.png" alt="Imagem do terminal do ubuntu no windows, depois de dar certo, exibindo o texto que pede para o usuario atualizar usando &lsquo;sudo apt update&rsquo;"></p>
+<ol start="7">
+<li>
+<p>Faça a atualização do seu ubuntu com o comando <code>sudo apt update</code>.</p>
+</li>
+<li>
+<p>Aconselho a instalar também o windows terminal que você encontra na Microsoft Store. Depois de instalar e abrir o windows terminal, se você apertar na seta apontada para baixo, tem a opção de abrir um prompt linux. (É possível ir nas configurações e determinar o ubuntu como seu prompt padrão).</p>
+</li>
+</ol>
+<p><img src="/img/elixir-windows/06.png" alt="Imagem do windows terminal. O terminal possui uma aba aberta com o ubuntu para linux, e um menu drop-down do lado direito das abas com opções dos diversos tipos de terminal disponiveis e opções de configuração"></p>
+<h2 id="2-instalando-o-asdf">2. Instalando o asdf</h2>
+<p>O asdf é um gerenciador de versões de linguagens de programação. Com ele, conseguimos instalar o suporte a diversas linguagem no nosso computador, bem como gerenciar diferentes versões delas.</p>
+<p>O ideal é seguir o tutorial com <a href="https://asdf-vm.com/#/">o site do próprio asdf</a> aberto ou, se preferir, pode usar <a href="https://translate.google.com/translate?sl=en&amp;tl=pt&amp;u=https://asdf-vm.com/%23/">o site traduzido</a>. Importante apontar que uma expressão ou outra poderá ser traduzida erroneamente.</p>
+<p>Pode reparar que no site não tem tutorial para windows, mas como nós usamos WSL, seguiremos o tutorial para linux.</p>
+<ol>
+<li>
+<p>Primeiro instalamos as dependências. No site aparecem algumas opções, como Aptitude, DNF, Pacman e Zypper. No ubuntu nós usamos Aptitude, então faremos a instalação com <code>sudo apt install curl git</code>.</p>
+</li>
+<li>
+<p>Agora que instalamos as dependências, podemos instalar o asdf. O próprio asdf recomenda usar git, então é o que iremos usar.</p>
+</li>
+<li>
+<p>Nesse próximo passo é importante saber qual o Shell que você tem. Hoje podemos usar o padrão do sistema, que é o bash, ou instalar um novo como o fish ou o zsh. Como o ubuntu é recém instalado, não fiz nenhuma modificação nele, o que significa que ele está com o padrão, que é o bash.</p>
+</li>
+<li>
+<p>Com essas informações em mãos, posso dizer que estou usando bash &amp; git.</p>
+</li>
+<li>
+<p>No print abaixo ele pede para abrirmos o arquivo <code>~/.bashrc</code> e adicionarmos alguns comandos. Se você estiver usando o zsh ou o fish, o arquivo e os comandos são outros.</p>
+</li>
+</ol>
+<p><img src="/img/elixir-windows/07.png" alt="A imagem foi tirada diretamente do site do asdf e mostra o menu de como instalar usando &lsquo;bash & git&rsquo;, no qual ele pede para adicionar duas linhas no arquivo .bashrc"></p>
+<ol start="6">
+<li>
+<p>Vamos abrir o arquivo solicitado no terminal, usando o vim. Para isso digitamos <code>vim ~/.bashrc</code> no terminal.</p>
+</li>
+<li>
+<p>Usando as setas do teclado vamos ao final do documento, apertamos a tecla i para entrar no modo de inserção, e colamos os dois comandos solicitados.</p>
+</li>
+<li>
+<p>Depois disso, precisamos salvar o arquivo. Pressionamos esc &gt; digamos :wq &gt; enter.</p>
+</li>
+<li>
+<p>Para as alterações funcionarem, é preciso reiniciar o shell. Podemos fazer isso fechando e abrindo o terminal.</p>
+</li>
+</ol>
+<p>Para saber se funcionou, digitamos <code>asdf</code>. Uma tela similar a esta deve aparecer:</p>
+<p><img src="/img/elixir-windows/07.png" alt="A imagem é uma captura de tela do terminal mostrando a documentação do asdf que aparece logo após digitarmos asdf no terminal"></p>
+<h2 id="3-instalando-o-erlang">3. Instalando o erlang</h2>
+<ol>
+<li>
+<p>Antes de instalar o plugin do erlang, precisamos instalar as dependências. Conseguimos a lista dessas dependências no repositório do plugin do erlang para asdf - <a href="https://github.com/asdf-vm/asdf-erlang#before-asdf-install">https://github.com/asdf-vm/asdf-erlang#before-asdf-install</a></p>
+</li>
+<li>
+<p>Nessa lista devemos procurar nosso sistema operacional e versão. No exemplo estamos usando o ubuntu 20.04, então encontramos <a href="https://github.com/asdf-vm/asdf-erlang#ubuntu-2004-lts">essa lista de dependências</a>.</p>
+</li>
+<li>
+<p>Lembrando que para instalar coisas no linux, precisamos usar <code>sudo</code> antes dos comandos de instalação. Então copiarmos o comando acima, porém adicionando um sudo na frente. Então ficaria algo como <code>sudo apt-get -y install (....)</code>.</p>
+</li>
+</ol>
+<p>Deixo o alerta que esse é um processo bastante demorado.
+Dá tempo de fazer um café ou um chá.</p>
+<ol start="4">
+<li>
+<p>Agora que instalamos as dependências, instalamos o plugin do erlang usando <code>asdf plugin add erlang https://github.com/asdf-vm/asdf-erlang.git</code> (o commando também pode ser encontrado no repositório do asdf-erlang)</p>
+</li>
+<li>
+<p>Agora que temos o plugin propriamente instalado, precisamos instalar uma versão. Vamos usar a ultima. <code>asdf install erlang latest</code> - Esse processo também leva um tempo, mas costuma a ser mais rápido do que o passo anterior. Se quisermos instalar outra versão, precisamos repetir apenas esse passo, mas ao invés de digitarmos <code>asdf install erlang latest</code>, digitamos <code>asdf install erlang &lt;versao&gt;</code></p>
+</li>
+<li>
+<p>Depois da instalação, precisamos definir qual a versão do erlang nós queremos usar. Esse passo é importante porque comumente temos mais de uma versão instalada. Pra isso digitamos <code>asdf global erlang latest</code>. (Caso queremos usar uma versão específica em uma pasta apenas, navegamos para dentro da pasta escolhida e digitamos <code>asdf local erlang latest</code>)</p>
+</li>
+<li>
+<p>Uma das formas de ver se funcionou é digitar <code>asdf list erlang</code>. Se deu certo, a versão instalada deve aparecer pra você</p>
+</li>
+<li>
+<p>Outra forma de ver se funcionou, digitamos <code>erl</code> no terminal e deve aparecer uma tela como essa</p>
+</li>
+</ol>
+<p><img src="/img/elixir-windows/08.png" alt="A imagem é um print screen do terminal com a imagem do erlang iterativo, que aparece quando digitamos o comando &lsquo;erl&rsquo;"></p>
+<p>(para sair dela, basta apertar ctrl+c duas vezes)</p>
+<h2 id="4-instalando-elixir">4. Instalando elixir</h2>
+<ol>
+<li>
+<p>Os passos que seguimos no elixir são bem similares aos da instalação do erlang. A diferença é que é muito muito muito mais rápido, e elixir não tem pré-requisitos de instalação no sistema.</p>
+</li>
+<li>
+<p>Vamos instalar o plugin de elixir do asdf com <code>asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git</code> e depois, <code>asdf plugin add elixir</code>.</p>
+</li>
+<li>
+<p>Vamos instalar a última versão digitando <code>asdf install elixir latest</code></p>
+</li>
+<li>
+<p>Vamos definir a versão que queremos usar de elixir com <code>asdf global elixir latest</code></p>
+</li>
+</ol>
+<p>Para checar se deu certo, podemos usar o <code>asdf list elixir</code></p>
+<p>Ou entrar no elixir iterativo usando <code>iex</code> (e assim como erlang, para sair dele, apertamos ctrl+c duas vezes.</p>
+<p>Podemos também digitar no terminal <code>elixir -v</code> para verificar a versão do elixir e do erlang instaladas.</p>
+<h2 id="5-opcionalmente-instalando-o-nodejs">5. Opcionalmente instalando o nodejs.</h2>
+<ol>
+<li>
+<p>NodeJS vai ser necessário caso você resolva trabalhar com phoenix um dia. Você pode pular esse passo, mas é possível que você precise instalar. O processo é igual ao do elixir.</p>
+</li>
+<li>
+<p>Vamos instalar o plugin do nodejs do asdf com <code>asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git </code>, e depois com <code>asdf plugin add nodejs</code></p>
+</li>
+<li>
+<p>Vamos instalar a última versão digitando <code>asdf install nodejs latest</code></p>
+</li>
+<li>
+<p>Vamos definir a versão que queremos usar de nodejs com <code>asdf global nodejs latest</code></p>
+</li>
+</ol>
+<p>Para checar se deu certo, podemos usar o <code>asdf list nodejs</code> ou com <code>node -v</code></p>
+<h2 id="6-uma-explicação-sobre-versões-de-elixir">6. Uma explicação sobre versões de elixir</h2>
+<p>Quando instalamos as últimas versões de elixir e erlang, geralmente elas são compativeis entre si, mas na hora que precisamos instalar uma versão mais antiga, precisamos prestar atenção se a versão do elixir é compatível com a versão do erlang que nós instalamos. Como eu faço isso?
+Quando digitamos o comando <code>asdf list elixir all</code> vai aparecer uma lista com as diversas versões disponíveis para instalação.</p>
+<p><img src="/img/elixir-windows/09.png" alt="A imagem é uma captura da tela do terminal mostrando algumas versões de elixir"></p>
+<p>Se você prestar atenção, existem várias versões iguais, porém com um <code>otp-algo</code> no final. Se prestarmos atenção na versão 1.12.2 do print acima, por exemplo, vemos que ela existe como <code>1.12.2, 1.12.2-otp-22, 1.12.2-otp-23 e 1.12.2-otp-24</code>. Como eu sei qual escolher?</p>
+<p>O número que vem depois do “otp” é a versão do erlang que aquela versão do elixir suporta.</p>
+<p>Então se você está usando uma versão 22.x.x do erlang, você deve optar pela <code>1.12.2-otp-22</code>, por exemplo.</p>
+<p>Parabéns, agora você já tem o elixir instalado no seu computador</p>
+<p><img src="/img/elixir-windows/10.gif" alt="gif animado que mostra um cachorro golden retriver, com um jaleco e oculos de scientista. No lugar das patas do cachorro você consegue ver uma mão humana, e uma delas balança um Erlenmeyer com um liquido verde"></p>
+<p><em>Imagem da capa por <a href="https://unsplash.com/@stadsa">Tadas Sar</a></em></p>
+
+      </div>
+      <footer>
+        <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/categories/elixir/">elixir</a></li>
+        
+          <li><a class="article-terms-link" href="/categories/tutorial/">tutorial</a></li>
+        
+          <li><a class="article-terms-link" href="/categories/windows/">windows</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/tags/elixir/">elixir</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/tutorial/">tutorial</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+      </footer>
+    </div>
+    
+      
+
+    
+  </article>
+  <div class="pagination">
+    
+    
+      <a href="/blog/ola-elixir/" class="button right"><span>Olá, Elixir</span></a>
+    
+  </div>
+
+      </main>
+      <section id="site-sidebar">
+  
+    <section id="recent-posts">
+      <header>
+        <h1>Posts Recentes</h1>
+      </header>
+      
+      <article class="mini-post">
+          <a href="/blog/elixir-windows/" class="image" style="--bg-image: url('https://elixirlab.org/img/elixir-windows/cover.jpg');">
+    <img class="cover" src="https://elixirlab.org/img/elixir-windows/cover.jpg" alt="Nuvens em tons de azul, rosa e roxo">
+  </a>
+        <header>
+          <h2><a href="/blog/elixir-windows/">Como instalar elixir no windows</a></h2>
+          <time class="published" datetime="2021-08-08 00:00:00 &#43;0000 UTC">08-08-2021</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          <a href="/blog/ola-elixir/" class="image" style="--bg-image: url('https://elixirlab.org/img/main/default.jpg');">
+    <img class="stretchH" src="https://elixirlab.org/img/main/default.jpg" alt="Nuvens em tons de azul, rosa e roxo">
+  </a>
+        <header>
+          <h2><a href="/blog/ola-elixir/">Olá, Elixir</a></h2>
+          <time class="published" datetime="2021-07-05 00:00:00 &#43;0000 UTC">05-07-2021</time>
+        </header>
+      </article>
+      
+      
+    </section>
+  
+
+  
+
+  
+    <section id="mini-bio">
+      <header>
+        <h1>Sobre</h1>
+      </header>
+      <p>Iniciativa brasileira para difundir a linguagem de programação Elixir em Português</p>
+      <footer>
+        <a href="/about" class="button">Saber Mais</a>
+      </footer>
+    </section>
+  
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="socnet-icons">
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/company/elixir-lab-org" target="_blank" rel="noopener" title="LinkedIn Company" class="fab fa-linkedin"></a></li>
+
+
+
+
+
+
+<li><a href="//youtube.com/ElixirLabOrg" target="_blank" rel="noopener" title="YouTube" class="fab fa-youtube"></a></li>
+
+
+
+
+
+
+
+<li><a href="//twitter.com/elixirlaborg" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
+  
+  <p class="copyright">
+    © 2021 
+      <br>
+    Tema: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect</a>
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      <script src="/js/highlight.js"></script>
+    
+    <script>hljs.highlightAll();</script><script src="/js/bundle.min.aec3d230ad1e49788388f4c52d791c8eb2579f75b224ef30a7fa412a08878ca0.js" integrity="sha256-rsPSMK0eSXiDiPTFLXkcjrJXn3WyJO8wp/pBKgiHjKA="></script>
+    <script src="/js/add-on.js"></script>
+    </div>
+  </body>
+</html>
