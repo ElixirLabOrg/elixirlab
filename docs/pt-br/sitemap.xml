@@ -3,23 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://elixirlab.org/</loc>
-    <lastmod>2021-07-05T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://elixirlab.org/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="https://elixirlab.org/"
-                />
-  </url>
-  
-  <url>
     <loc>https://elixirlab.org/blog/</loc>
-    <lastmod>2021-07-05T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-08T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -33,13 +18,8 @@
   </url>
   
   <url>
-    <loc>https://elixirlab.org/categories/boas-vindas/</loc>
-    <lastmod>2021-07-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://elixirlab.org/categories/</loc>
-    <lastmod>2021-07-05T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-08T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -53,8 +33,13 @@
   </url>
   
   <url>
+    <loc>https://elixirlab.org/blog/elixir-windows/</loc>
+    <lastmod>2021-08-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://elixirlab.org/tags/elixir/</loc>
-    <lastmod>2021-07-05T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-08T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -69,7 +54,7 @@
   
   <url>
     <loc>https://elixirlab.org/categories/elixir/</loc>
-    <lastmod>2021-07-05T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-08T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -83,13 +68,8 @@
   </url>
   
   <url>
-    <loc>https://elixirlab.org/blog/ola-elixir/</loc>
-    <lastmod>2021-07-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://elixirlab.org/tags/</loc>
-    <lastmod>2021-07-05T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-08T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -99,6 +79,46 @@
                 rel="alternate"
                 hreflang="pt-br"
                 href="https://elixirlab.org/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://elixirlab.org/tags/tutorial/</loc>
+    <lastmod>2021-08-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://elixirlab.org/categories/tutorial/</loc>
+    <lastmod>2021-08-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://elixirlab.org/categories/windows/</loc>
+    <lastmod>2021-08-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://elixirlab.org/categories/boas-vindas/</loc>
+    <lastmod>2021-07-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://elixirlab.org/blog/ola-elixir/</loc>
+    <lastmod>2021-07-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://elixirlab.org/</loc>
+    <lastmod>2021-02-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://elixirlab.org/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://elixirlab.org/"
                 />
   </url>
   

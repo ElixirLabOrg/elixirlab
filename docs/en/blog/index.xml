@@ -6,7 +6,11 @@
     <description>Recent content in Blog on Elixir Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 05 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://elixirlab.org/en/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Jul 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://elixirlab.org/en/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Hello, Elixir</title>
       <link>https://elixirlab.org/en/blog/hello-elixir/</link>

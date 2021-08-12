@@ -6,22 +6,44 @@
     <description>Recent content in Categories on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Mon, 05 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://elixirlab.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Aug 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://elixirlab.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>elixir</title>
+      <link>https://elixirlab.org/categories/elixir/</link>
+      <pubDate>Sun, 08 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://elixirlab.org/categories/elixir/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tutorial</title>
+      <link>https://elixirlab.org/categories/tutorial/</link>
+      <pubDate>Sun, 08 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://elixirlab.org/categories/tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>windows</title>
+      <link>https://elixirlab.org/categories/windows/</link>
+      <pubDate>Sun, 08 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://elixirlab.org/categories/windows/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>boas-vindas</title>
       <link>https://elixirlab.org/categories/boas-vindas/</link>
       <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://elixirlab.org/categories/boas-vindas/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>elixir</title>
-      <link>https://elixirlab.org/categories/elixir/</link>
-      <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://elixirlab.org/categories/elixir/</guid>
       <description></description>
     </item>
     

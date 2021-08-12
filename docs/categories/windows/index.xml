@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>elixir on </title>
-    <link>https://elixirlab.org/categories/elixir/</link>
-    <description>Recent content in elixir on </description>
+    <title>windows on </title>
+    <link>https://elixirlab.org/categories/windows/</link>
+    <description>Recent content in windows on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
     <lastBuildDate>Sun, 08 Aug 2021 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://elixirlab.org/categories/elixir/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://elixirlab.org/categories/windows/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,16 +19,6 @@
       <guid>https://elixirlab.org/blog/elixir-windows/</guid>
       <description>1. Instalação do WSL O primeiro passo é instalar o WSL (windows system for Linux) na sua máquina.
  Se o seu windows está em português, vai em Windows &amp;gt; recursos do windows. Caso seu windows esteja em inglês, procure por “Windows Features” ao invés de “Recursos do windows”.  Marcar a opção “Subsistema do Windows para Linux”. Caso seu windows esteja em inglês, a opção se chama “Windows Subsystem for Linux”   Abrir a Microsoft Store.</description>
-    </item>
-    
-    <item>
-      <title>Olá, Elixir</title>
-      <link>https://elixirlab.org/blog/ola-elixir/</link>
-      <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://elixirlab.org/blog/ola-elixir/</guid>
-      <description>&lt;p&gt;Boas-vindas!&lt;/p&gt;
-&lt;p&gt;Este é o Projeto Elixir Lab - uma iniciativa brasileira para promover a linguagem de programação Elixir em Português!&lt;/p&gt;</description>
     </item>
     
   </channel>

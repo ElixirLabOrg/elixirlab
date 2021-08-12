@@ -6,13 +6,26 @@
     <description>Recent content in Tags on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Mon, 05 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://elixirlab.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Aug 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://elixirlab.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>elixir</title>
       <link>https://elixirlab.org/tags/elixir/</link>
-      <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 08 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://elixirlab.org/tags/elixir/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tutorial</title>
+      <link>https://elixirlab.org/tags/tutorial/</link>
+      <pubDate>Sun, 08 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://elixirlab.org/tags/tutorial/</guid>
       <description></description>
     </item>
     
